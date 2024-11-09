@@ -28,4 +28,5 @@ def entry_page() -> "html":
     )
 
 
-app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
