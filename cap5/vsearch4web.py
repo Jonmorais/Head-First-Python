@@ -5,11 +5,6 @@ from vsearch import search4letters
 app = Flask(__name__)
 
 
-@app.route("/")
-def hello() -> str:
-    return "Hello world from Flask!"
-
-
 @app.route("/search4", methods=["POST"])
 def do_search() -> "html":
     phrase = request.form["phrase"]
@@ -25,6 +20,7 @@ def do_search() -> "html":
     )
 
 
+@app.route("/")
 @app.route("/entry")
 def entry_page() -> "html":
     return render_template(

@@ -1,14 +1,34 @@
 body {
+  color: #E0E0E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
   font-family:      Verdana, Geneva, Arial, sans-serif;
   font-size:        medium;
-  background-color: tan;
-  margin-top:       5%;
-  margin-bottom:    5%;
-  margin-left:      10%;
-  margin-right:     10%;
-  border:           1px dotted gray;
+  overflow-y: hidden;
+  background-color: #0d1117;
+  margin:           auto;
+  border:           none;
   padding:          10px 10px 10px 10px;
 }
+h2 {
+  font-size: 150%;
+  margin-bottom: 20px;
+}
+.form-container {
+  width: auto;
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 a {
   text-decoration:  none; 
   font-weight:      600; 
@@ -48,24 +68,27 @@ td, th {
 
 table {
 font-size:          1em;
-background-color:   #fafcff;
-border:             1px solid #909090;
-color:              #2a2a2a;
+background-color:   auto;
+border:           #0d1117;
+border-radius:      12px;
+color:              #E0E0E0;
 padding:            5px 5px 2px;
 border-collapse:    collapse;
 }
 
 td, th {
-border:             thin dotted gray;
+border:             none;
 }
 
 /*** Inputs ***/
 input[type=text] {
   font-size:        115%;
-  width:            30em;
+  width:            auto;
+  border-radius: 12px;
 }
 input[type=submit] {
   font-size:        125%;
+  border-radius: 12px;
 }
 select {
   font-size:        125%;
