@@ -12,8 +12,8 @@ body {
 
 
 .box {
-  margin: 2rem auto;
-  max-width: 40ch;
+  margin:  auto;
+  max-width: auto;
   border: 8px solid #0038FF;
   color: #fff;
   padding: 2ch;
@@ -28,8 +28,8 @@ body {
   position: absolute;
   right: -28px;
   top: calc(50% - 14px);
-  width: 24px;
-  height: 28px;
+  width: auto;
+  height: auto;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 0H0v8h12v4h4v4h-4v4H0v8h4v-4h8v-4h4v-4h8v-4h-8V8h-4V4H4V0z' fill='%230038FF'/%3E%3Cpath fill='%23161616' d='M0 8h4v12H0z'/%3E%3C/svg%3E");
 }
 
