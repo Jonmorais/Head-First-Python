@@ -3,20 +3,21 @@
 {% block body %}
 
 <h2>{{ the_title }}</h2>
-
-<table>
-    <tr>
-        {% for row_title in the_row_titles %}
-            <th>{{row_title}}</th>
-        {% endfor %}
-    </tr>
-    {% for log_row in the_data %}
+<div class="table-container">
+    <table>
         <tr>
-            {% for item in log_row %}
-                <th>{{item}}</th>
+            {% for row_title in the_row_titles %}
+                <th>{{row_title}}</th>
             {% endfor %}
         </tr>
-    {% endfor %}
-</table>
+        {% for log_row in the_data %}
+            <tr>
+                {% for item in log_row %}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+</div>
 
 {% endblock %}
