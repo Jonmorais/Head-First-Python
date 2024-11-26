@@ -57,20 +57,31 @@ h2 {
 /*** Tables ***/
 
 table {
-font-size:          1em;
-background-color:   auto;
-border:           #0d1117;
-border-radius:      12px;
-color:              #E0E0E0;
-padding:            5px 5px 2px;
-border-collapse:    collapse;
-text-align:"center";
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: #1c1c1c; /* Fundo escuro (dark mode) */
+  color: #f5f5f5; /* Texto claro */
 }
 
-td, th {
-  margin: auto;
-  font-size: 10px;
-  border:             thin solid blue;
+th, td {
+  border: 1px solid #333; /* Borda sutil para células */
+  padding: 10px 15px;
+}
+
+th {
+  background-color: #2a2a2a; /* Fundo levemente mais claro para cabeçalhos */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #242424; /* Fundo alternado para linhas pares */
+}
+
+tr:hover {
+  background-color: #333; /* Destaque ao passar o mouse */
 }
 
 /*** Inputs ***/
